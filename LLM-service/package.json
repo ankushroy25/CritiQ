@@ -1,0 +1,30 @@
+{
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "name": "g1",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@genkit-ai/ai": "^0.5.3",
+    "@genkit-ai/core": "^0.5.3",
+    "@genkit-ai/dotprompt": "^0.5.3",
+    "@genkit-ai/flow": "^0.5.3",
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "genkitx-ollama": "^0.5.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.2"
+  }
+}
