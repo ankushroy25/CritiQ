@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: "Manrope", sans-serif;
+  --gradient-text2: linear-gradient(
+    100deg,
+    #f4c587,
+    #d6d3e9 60.42%,
+    #99d2ec 95.31%
+  );   /* COLOR THEME FOR BUTTONS AND TEXT */
+  --gradient-text: linear-gradient(103.22deg, #8119f1 -13.86%, #fd955d 99.55%);
+  --gradient-bar: linear-gradient(89.97deg, #d22d9e 1.84%, #7429dd 102.67%);
+  --invert-gradient: linear-gradient(
+    103.22deg,
+    #fd955d -13.86%,
+    #8119f1 99.55%
+  );
+  --color-amisha: #f3f8ff;
+  --color-footer: #150b1c;
+  --color-footer2: radial-gradient(circle at 0% 0%, #2f5060 0, #150b1c 8%);
+  --color-blog: #042c54;
+  --color-text2: #171c22;
+  --color-text: #fac5fc;
+  --color-subtext: #ff8a71;
+  --color-dark: #521bde;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.br {
+  border: 2px solid red;
+}
+
+.linear-gradient {
+  background: linear-gradient(
+    179.14deg,
+    rgba(32, 18, 63, 0) -7.14%,
+    #000000 87.01%
+  );
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.8);
+}
+
+input[type="file"]::file-selector-button {
+  border: 1px solid #8c6dfd;
+  padding: 0.1em 0.8em;
+  /* margin-right: 16px; */
+  border-radius: 0.25em;
+  background-color: #8c6dfd;
+  transition: 1s;
+  font-size: small;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #81ecec;
+  cursor: pointer;
+}

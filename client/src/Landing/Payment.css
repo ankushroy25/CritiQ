@@ -1,0 +1,27 @@
+.paytop h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: var(--gradient-text2);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15vh;
+    text-align: center;
+
+}
+.paybottom{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 1rem;
+}
+@media(max-width: 768px){
+    .paytop h1{
+        font-size: 2rem;
+        margin-bottom: 10vh;
+    }
+    .paybottom{
+        gap: 2vw;
+        flex-direction: column;
+        align-items: center;
+    }
+}

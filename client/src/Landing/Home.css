@@ -1,0 +1,12 @@
+
+  .homeout{
+    font-family: var(--font-family);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+    
+  
+  }

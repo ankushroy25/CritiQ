@@ -1,0 +1,88 @@
+/* Login.css */
+.parent_login_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container1 {
+    width: 30vw;
+    margin:5vh auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    height: 50vh;
+  }
+  
+  .form-title1 {
+    font-size: 5vh;
+    text-align: center;
+    /* margin-bottom: 2vh; */
+    color: #fff;
+  }
+  
+  .login-form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-group1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-bottom: 15px;
+  }
+  
+  .wallet-button1 {
+    padding: 10px 20px;
+    background-color: #010b01;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+  }
+  
+  .wallet-button1:hover,
+  .login-button:hover {
+    background-color: #000701;
+    cursor: pointer;
+  }
+  .login-button1{
+    margin-top: 1vh;
+    padding: 10px 20px;
+    background-color: #f2f8f3;
+    color: #000701;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .disabled1{
+    opacity0: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .wallet-message1 {
+    margin-top: 5px;
+    color: #ffcc00;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .login-container1 {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  

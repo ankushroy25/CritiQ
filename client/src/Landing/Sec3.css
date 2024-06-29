@@ -1,0 +1,123 @@
+.sec3out{
+    display: flex;
+    justify-content: center;
+    width:100vw;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.sec3left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4% 10%;
+  }
+  .sec3right{
+    width: 50%;
+    padding: 4% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec3right img{
+    width:70%;
+    padding: 10%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% -100%, #208af3 25%, #f2e380 85%, #1b78de 100%);
+  }
+
+
+  .container2 {
+    margin: 0 auto;
+  }
+  
+  .card2 {
+    position: relative;
+    width: 30vw;
+    height: 300px;
+    margin: 0 auto;
+    background: radial-gradient(circle at 30% -100%, #042c54 25%, #200334 85%, #1b78de 100%);
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(104, 100, 169, 0.5);
+  }
+  
+  .face2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .face2.back2 {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  .face2.back2 b {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .face2.back2 .desc2 {
+    background-color: #eee;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .face2.front2 {
+    transition: 0.5s;
+  }
+  
+  .face2.front2 b {
+    margin: 0;
+    padding: 0;
+    font-size: 3.1em;
+    background: var(--gradient-text2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+  .card2:hover .face2.front2 {
+    height: 60px;
+  }
+  
+  .card2:hover .face2.front2 b {
+    
+    font-size: 2em;
+  }
+  
+  .face2.front2 {
+    background-color: #0b011b;
+    border-radius: 15px;
+  }
+
+  @media(max-width:750px){
+    .sec3out{
+      flex-direction: column;
+    }
+    .sec3left{
+      width: 100%;
+      align-items: center;
+    }
+    .card2,.face2,.face2.front2{
+      width:80vw;
+      text-align: center;
+    }
+   .face2 b{
+      font-size: 2.7rem !important;
+   }
+   .sec3right{
+    width:90%;
+    margin-bottom: 15vh;
+   }
+  }

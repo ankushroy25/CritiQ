@@ -1,0 +1,166 @@
+.flip-card8 {
+    background-color: transparent;
+    width: 340px;
+    height: 220px;
+    perspective: 1000px;
+    color: rgb(71, 18, 86);
+  }
+  
+  .heading_82648 {
+    /* position: absolute;
+    letter-spacing: .2em;
+    font-size: 0.5em;
+    top: 2em;
+    left: 18.6em; */
+    position: absolute;
+    letter-spacing: 0.2em;
+    font-size: 0.75em;
+    top: 2em;
+    left: 19.6em;
+    text-wrap: nowrap;  
+}
+  
+  .logo8 {
+    /* position: absolute;
+    top: 6.8em;
+    left: 11.7em; */
+    position: absolute;
+    top: 9.2em;
+    left: 16.7em;
+  }
+  
+  .chip8 {
+    position: absolute;
+    top: 2.3em;
+    left: 1.5em;
+  }
+  
+  .contactless8 {
+    /* position: absolute;
+    top: 3.5em;
+    left: 12.4em; */
+    position: absolute;
+    top: 4.5em;
+    left: 17.4em;
+  }
+  
+  .number8 {
+    position: absolute;
+    font-weight: bold;
+    /* font-size: 0.6em; */
+    font-size: .9em;
+    top: 7.3em;
+    left: 1.6em;
+  }
+  
+  .valid_thru8 {
+    position: absolute;
+    font-weight: bold;
+    top: 635.8em;
+    font-size: .01em;
+    left: 140.3em;
+  }
+  
+  .date_82648 {
+    /* position: absolute;
+    font-weight: bold;
+    font-size: .5em;
+    top: 13.6em;
+    left: 3.2em; */
+    position: absolute;
+    font-weight: bold;
+    font-size: .8em;
+    top: 11.6em;
+    left: 1.8em;
+  }
+  .copy{
+    cursor: pointer;
+  }
+  .name8 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.75em;
+    top: 16.1em;
+    left: 2em;
+  }
+  
+  .strip8 {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 2.5em;
+    top: 2.4em;
+    background: repeating-linear-gradient(
+      45deg,
+      #303030,
+      #303030 10px,
+      #202020 10px,
+      #202020 20px
+    );
+  }
+  
+  .mstrip8 {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 8em;
+    height: 0.8em;
+    top: 5em;
+    left: .8em;
+    border-radius: 2.5px;
+   
+  }
+  
+  .sstrip8 {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 4.1em;
+    height: 0.8em;
+    top: 5em;
+    left: 10em;
+    border-radius: 2.5px;
+    
+  }
+  
+  .code8 {
+    font-weight: bold;
+    text-align: center;
+    margin: .2em;
+    color: rgb(250, 250, 250);
+  }
+  
+  .flip-card-inner8 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card8:hover .flip-card-inner8 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front8, .flip-card-back8 {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front8 {
+    box-shadow: rgb(200 0 0 / 40%) 0px 2px 2px, rgb(151 18 18 / 30%) 0px 7px 13px -3px, rgb(172 11 11 / 20%) 0px -1px 0px inset;
+    background-color: #f27b85;
+}
+  
+  .flip-card-back8 {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #f27b85;
+    transform: rotateY(180deg);
+  }
