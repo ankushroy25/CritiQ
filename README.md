@@ -1,8 +1,12 @@
 # CritiQ
+![](https://github.com/ankushroy25/CritiQ/blob/main/preview/Cover.png)
 
 
 ## Overview
 CritiQ is an application for handling customer reviews and feedback for products and services. It provides a range of endpoints for managing users, reviews, and validation processes.
+
+## Services used
+![](https://github.com/ankushroy25/CritiQ/blob/main/preview/Screenshot%202024-06-30%20111246.png)
 
 ## Table of Contents
 - [Setup](#setup)
@@ -10,15 +14,15 @@ CritiQ is an application for handling customer reviews and feedback for products
 - [Contributing](#contributing)
 - [License](#license)
 
-## Setup
-### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB
-
 
 ### Avalanche 
     Contract address : "0x08eB668E21bee808e48A0449713b3494476Eb1b0",
     Block  explorer Transaction Hash : "0x6e9e8cc04003759822505cdf5bbb39258ba71a4f76b07e30daa0ac343ee3ded9"
+
+## Setup
+### Prerequisites
+- Node.js (v14 or higher)
+- MongoDB
 
 ### Installation
 1. Clone the repository:
