@@ -3,7 +3,10 @@
 
 
 ## Overview
-CritiQ is an application for handling customer reviews and feedback for products and services. It provides a range of endpoints for managing users, reviews, and validation processes.
+CritiQ is an decentralised web application for handling customer reviews and feedback for products and services. 
+It incentivises the reviewer and prevents them from posting gibberish reviews to maintain authenticity.
+Companies are assisted with LLMs to improve their competition in market. 
+It provides a range of endpoints for managing users, reviews, and validation processes.
 
 ## Services used
 ![](https://github.com/ankushroy25/CritiQ/blob/main/preview/Screenshot%202024-06-30%20111246.png)
