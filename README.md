@@ -15,6 +15,11 @@ CritiQ is an application for handling customer reviews and feedback for products
 - Node.js (v14 or higher)
 - MongoDB
 
+
+### Avalanche 
+    Contract address : "0x08eB668E21bee808e48A0449713b3494476Eb1b0",
+    Block  explorer Transaction Hash : "0x6e9e8cc04003759822505cdf5bbb39258ba71a4f76b07e30daa0ac343ee3ded9"
+
 ### Installation
 1. Clone the repository:
         git clone https://github.com/biswajit150803/critiqAll_backend.git
