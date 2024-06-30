@@ -1,9 +1,8 @@
-# critiqAll_backend
+# CritiQ
 
-![critiqAll_backend](https://user-images.githubusercontent.com/123456789/1234567890/critiqAll_backend.png)
 
 ## Overview
-critiqAll_backend is a backend application for handling customer reviews and feedback for products and services. It provides a range of endpoints for managing users, reviews, and validation processes.
+CritiQ is an application for handling customer reviews and feedback for products and services. It provides a range of endpoints for managing users, reviews, and validation processes.
 
 ## Table of Contents
 - [Setup](#setup)
