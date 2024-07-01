@@ -106,7 +106,7 @@ BACKEND API:
     - Method: GET
     - Body:
                 {
-            "phone": "string",
+                    "phone": "string",
                 }
    ```     
 - Create a phone data
@@ -114,10 +114,10 @@ BACKEND API:
     - Method: POST
     - Body:
                 { 
-            "sid": "string", 
-            "id": "string", 
-            "phone": "string" 
-            }
+                    "sid": "string", 
+                    "id": "string", 
+                    "phone": "string" 
+                }
       ```  
 ### Question endpoints
 ```- Create a question
@@ -125,22 +125,22 @@ BACKEND API:
     - Method: POST
     - Body: 
                 {
-                "productName": "string",
-      "productDescription": "string",
-      "productImageUrl": "string",
-      "isOrderIdTracking": "boolean",
-      "reviewDate": "string",
-      "excelFile": "string",
-      "questions": [
-                    {
-                        "question": "string",
-                        "type": "string",
-                        "options": [
-                            "string"
-                        ]
-                    }
-                    ],
-                }
+                  "productName": "string",
+                  "productDescription": "string",
+                  "productImageUrl": "string",
+                  "isOrderIdTracking": "boolean",
+                  "reviewDate": "string",
+                  "excelFile": "string",
+                  "questions": [
+                                    {
+                                        "question": "string",
+                                        "type": "string",
+                                        "options": [
+                                                        "string"
+                                                   ]
+                                    }
+                              ],
+             }
 ```
 ## Contributing
 1. Fork the repository
