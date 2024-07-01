@@ -30,21 +30,22 @@ It provides a range of endpoints for managing users, reviews, and validation pro
 
 ### Installation
 1. Clone the repository:
-        git clone https://github.com/biswajit150803/critiqAll_backend.git
-    cd critiqAll_backend
+        ```git clone https://github.com/biswajit150803/critiqAll_backend.git
+        cd critiqAll_backend```
     
 
 2. Install dependencies:
-        npm install
+        ```npm install```
     
 
 3. Create a .env file with the following variables:
-        MONGODB_URI=your_mongodb_uri
+        ```
+MONGODB_URI=your_mongodb_uri
     PORT=your_port
-    
+```    
 
 4. Start the server:
-        npm start
+```        npm start```
     
 
 ## Endpoints
