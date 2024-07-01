@@ -39,8 +39,8 @@ It provides a range of endpoints for managing users, reviews, and validation pro
     
 
 3. Create a .env file with the following variables:
-        ```
-MONGODB_URI=your_mongodb_uri
+
+```    MONGODB_URI=your_mongodb_uri
     PORT=your_port
 ```    
 
@@ -53,7 +53,7 @@ BACKEND API:
 
 ### User Endpoints
 -Register a customer
-    - URL: /signup
+   ``` - URL: /signup
     - Method: POST
     - Body: 
                 {
@@ -61,18 +61,18 @@ BACKEND API:
                      "companyEmail": "string",
                      "walletAddress": "string"
                 }
-
+```
 -Login a customer
-    - URL: /signup
+   ``` - URL: /signup
     - Method: POST
     - Body: 
                 {
                      "walletAddress": "string"
                 }
-
+```
 ### Company Endpoints
 -Register a company
-    - URL: /api/users/signup
+   ``` - URL: /api/users/signup
     - Method: POST
     - Body: 
             {
@@ -82,35 +82,35 @@ BACKEND API:
                 "companyDescription": "string",
                 "walletAddress": "string",
             }
-
+```
 -Login a company
-    - URL: /api/users/login
+   ``` - URL: /api/users/login
     - Method: POST
     - Body: 
                 {
                      "walletAddress": "string"
                 }
-
+```
 -OTP Verification
-    - URL: /sendotp
+   ``` - URL: /sendotp
     - Method: POST
     - Body: 
                 {
                      "email": "string",
                      "otp": "string"
                 }
-
+```
 ### Phone Endpoints                  
 - Get Phone
-    - URL: /getphone
+```    - URL: /getphone
     - Method: GET
     - Body:
                 {
             "phone": "string",
                 }
-        
+   ```     
 - Create a phone data
-    - URL: /createphone
+   ``` - URL: /createphone
     - Method: POST
     - Body:
                 { 
@@ -118,9 +118,9 @@ BACKEND API:
             "id": "string", 
             "phone": "string" 
             }
-        
+      ```  
 ### Question endpoints
-- Create a question
+```- Create a question
     - URL: /
     - Method: POST
     - Body: 
@@ -141,7 +141,7 @@ BACKEND API:
                     }
                     ],
                 }
-
+```
 ## Contributing
 1. Fork the repository
 2. Create a new branch (git checkout -b feature/your-feature)
