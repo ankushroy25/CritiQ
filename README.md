@@ -8,6 +8,10 @@ It incentivises the reviewer and prevents them from posting gibberish reviews to
 Companies are assisted with LLMs to improve their competition in market. 
 It provides a range of endpoints for managing users, reviews, and validation processes.
 
+### Website - [Live link](https://critiq-one.vercel.app/) | [Demo Video](https://drive.google.com/file/d/1wFP578weTcJbF1yu-rqYksWDsNDnd-wl/view?usp=sharing)
+
+### Router Protocol - [Code](https://github.com/ankushroy25/CritiQ/blob/main/client/src/pages/RouterProtocol.jsx)
+
 ## Services used
 ![](https://github.com/ankushroy25/CritiQ/blob/main/preview/Screenshot%202024-06-30%20111246.png)
 
