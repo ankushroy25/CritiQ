@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@dynopii/callchimp": "^0.1.3",
+    "@mui/material": "^5.16.0",
     "@onflow/fcl": "^1.10.2",
     "@onflow/types": "^1.4.0",
     "@radix-ui/react-icons": "^1.3.0",
@@ -24,6 +25,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "copy-text-to-clipboard": "^3.2.0",
+    "ethers": "^5.7.2",
     "lucide-react": "^0.399.0",
     "react": "^18.2.0",
     "react-dom": "^18.3.1",

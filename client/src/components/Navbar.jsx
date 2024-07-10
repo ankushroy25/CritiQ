@@ -28,7 +28,7 @@ const Navbar = () => {
           className="flex w-full font-epilogue font-normal text-[14px] placeholder:text-[#4b5264] text-white bg-transparent outline-none"
         />
 
-        <div className="px-3 h-full rounded-full bg-[#4acd8d] flex justify-center items-center cursor-pointer" >
+        <div className="px-3 h-full rounded-full bg-[#4acd8d] flex justify-center items-center cursor-pointer">
           <img
             src={search}
             alt="search"
@@ -62,19 +62,19 @@ const Navbar = () => {
             handleClick={logout}
           />
         ) : null}
-        <Link to="/profile">
-          <div className="w-[52px] h-[52px] rounded-full bg-[#2c2f32] flex justify-center items-center cursor-pointer" >
+        {/* <Link to="/profile">
+          <div className="w-[52px] h-[52px] rounded-full bg-[#2c2f32] flex justify-center items-center cursor-pointer">
             <img
               src={thirdweb}
               alt="user"
               className="w-[60%] h-[60%] object-contain"
             />
           </div>
-        </Link>
+        </Link> */}
       </div>
 
       {/* Small screen navigation */}
-      <div className="sm:hidden flex justify-between items-center relative">
+      <div className="sm:hidden flex w-full justify-between items-center relative">
         <div className="w-[40px] h-[40px] rounded-[10px] bg-[#2c2f32] flex justify-center items-center cursor-pointer">
           <img
             src={Logo}
@@ -129,7 +129,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <div className="flex mx-4">
+          <div className="flex mx-4 gap-4">
             {isCompany ? (
               <CustomButton
                 btnType="button"

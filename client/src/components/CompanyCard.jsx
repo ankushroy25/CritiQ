@@ -2,7 +2,6 @@ import { useState } from "react";
 import { thirdweb } from "../assets";
 import { useStateAuth } from "../context/StateProvider";
 import * as XLSX from "xlsx";
-import { FaCross } from "react-icons/fa";
 import { GiCrossMark } from "react-icons/gi";
 
 const CompanyCard = ({
@@ -194,43 +193,49 @@ const CompanyCard = ({
         <h2 className="text-center text-2xl mb-8 font-semibold">
           Reviews for {name}
         </h2>
-        <div className="border p-0.5 mx-2 rounded-lg">
-          <table>
-            <thead>
-              <tr className="border-y">
-                <th className="border-x">Name</th>
-                <th>Description</th>
-                <th className="border-x">Question Answers</th>
-              </tr>
-            </thead>
-            <tbody>
-              {reviews.map((review, index) => (
-                <tr key={index} className="border-b">
-                  <td className="px-6 py-4 whitespace-nowrap text-base font-medium text-gray-400 border-x">
-                    {review.name}
-                  </td>
-                  <td className="px-6 py-4 text-wrap text-sm text-gray-400">
-                    {review.description}
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-400 border-x">
-                    {review.questionAnswers.map((qnaset, qnaIndex) => (
-                      <div key={qnaIndex}>
-                        <p>Q: {qnaset.question}</p>
-                        <p>A: {qnaset.answer}</p>
-                      </div>
-                    ))}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <button
-          className="flex mx-auto bg-green-800 border  rounded-lg py-2 px-3 mt-4 hover:bg-green-600 "
-          onClick={() => downloadExcel(reviews)}
-        >
-          Download Excel
-        </button>
+        {reviews.length > 0 ? (
+          <>
+            <div className="border p-0.5 mx-2 rounded-lg">
+              <table>
+                <thead>
+                  <tr className="border-y">
+                    <th className="border-x">Name</th>
+                    <th>Description</th>
+                    <th className="border-x">Question Answers</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {reviews.map((review, index) => (
+                    <tr key={index} className="border-b">
+                      <td className="px-6 py-4 whitespace-nowrap text-base font-medium text-gray-400 border-x">
+                        {review.name}
+                      </td>
+                      <td className="px-6 py-4 text-wrap text-sm text-gray-400">
+                        {review.description}
+                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-400 border-x">
+                        {review.questionAnswers.map((qnaset, qnaIndex) => (
+                          <div key={qnaIndex}>
+                            <p>Q: {qnaset.question}</p>
+                            <p>A: {qnaset.answer}</p>
+                          </div>
+                        ))}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <button
+              className="flex mx-auto bg-green-800 border  rounded-lg py-2 px-3 mt-4 hover:bg-green-600 "
+              onClick={() => downloadExcel(reviews)}
+            >
+              Download Excel
+            </button>
+          </>
+        ) : (
+          <p className="text-center mb-8">No reviews yet</p>
+        )}
       </Modal>
     </div>
   );

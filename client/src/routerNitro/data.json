@@ -1,0 +1,135 @@
+{
+  "testTokens": [
+    {
+      "src": "Polygon",
+      "chainId": "80002",
+      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      "name": "MATIC",
+      "symbol": "MATIC",
+      "decimals": 18,
+      "resourceID": "",
+      "isMintable": false,
+      "isWrappedAsset": false,
+      "rpc_url": "https://rpc-amoy.polygon.technology/",
+      "img_url": "https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/DPYBKVZG55EWFHIK2TVT3HTH7Y.png"
+    },
+    {
+      "src": "Polygon",
+      "chainId": "80002",
+      "address": "0xBAD6e1AbE5EbEae8a123ef14AcA7024D3F8c45fb",
+      "name": "AFTT",
+      "symbol": "AFTT",
+      "decimals": 18,
+      "resourceID": "aftt",
+      "isMintable": false,
+      "isWrappedAsset": false,
+      "rpc_url": "https://rpc-amoy.polygon.technology/",
+      "img_url": "https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/DPYBKVZG55EWFHIK2TVT3HTH7Y.png"
+    },
+
+    {
+      "src": "Sepolia",
+      "chainId": "11155111",
+      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      "name": "ETH",
+      "symbol": "ETH",
+      "decimals": 18,
+      "resourceID": "native-eth",
+      "isMintable": false,
+      "isWrappedAsset": false,
+      "rpc_url": "https://eth-sepolia-public.unifra.io",
+      "img_url": "https://cryptologos.cc/logos/ethereum-eth-logo.png?v=014"
+    },
+    {
+      "src": "Sepolia",
+      "chainId": "11155111",
+      "address": "0xb75f7E3256A5FDa11A3e95Dd25e8129189F78dA3",
+      "name": "AFTT",
+      "symbol": "AFTT",
+      "decimals": 18,
+      "resourceID": "aftt",
+      "isMintable": false,
+      "isWrappedAsset": false,
+      "rpc_url": "https://eth-sepolia-public.unifra.io",
+      "img_url": "https://cryptologos.cc/logos/ethereum-eth-logo.png?v=014"
+    },
+    {
+      "src": "Sepolia",
+      "chainId": "11155111",
+      "address": "0xb1C3Cb9b5e598d4E95a85870e7812B99f350982d",
+      "name": "AVAIL",
+      "symbol": "AVAIL",
+      "decimals": 18,
+      "resourceID": "",
+      "isMintable": false,
+      "isWrappedAsset": false,
+      "rpc_url": "https://eth-sepolia-public.unifra.io",
+      "img_url": "https://cryptologos.cc/logos/ethereum-eth-logo.png?v=014"
+    },
+    {
+      "src": "Holesky",
+      "chainId": "17000",
+      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      "name": "ETH",
+      "symbol": "ETH",
+      "decimals": 18,
+      "resourceID": "native-eth",
+      "isMintable": false,
+      "isWrappedAsset": false,
+      "rpc_url": "https://ethereum-holesky.publicnode.com/",
+      "img_url": "https://cryptologos.cc/logos/cardano-ada-logo.png?v=014"
+    },
+    {
+      "src": "Holesky",
+      "chainId": "17000",
+      "address": "0x5c2c6ab36a6e4e160fb9c529e164b7781f7d255f",
+      "name": "AFTT",
+      "symbol": "AFTT",
+      "decimals": 18,
+      "resourceID": "aftt",
+      "isMintable": false,
+      "isWrappedAsset": false,
+      "rpc_url": "https://ethereum-holesky.publicnode.com/",
+      "img_url": "https://cryptologos.cc/logos/cardano-ada-logo.png?v=014"
+    },
+    {
+      "src": "Avalanche",
+      "chainId": "43113",
+      "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+      "name": "AVAX",
+      "symbol": "AVAX",
+      "decimals": 18,
+      "resourceID": "native-avax",
+      "isMintable": false,
+      "isWrappedAsset": false,
+      "rpc_url": "https://api.avax-test.network/ext/C/rpc",
+      "img_url": "https://cryptologos.cc/logos/avalanche-avax-logo.png?v=014"
+    },
+    {
+      "src": "Avalanche",
+      "chainId": "43113",
+      "address": "0x69dc97bb33e9030533ca2006ab4cef67f4db4125",
+      "name": "AFTT",
+      "symbol": "AFTT",
+      "decimals": 18,
+      "resourceID": "aftt",
+      "isMintable": false,
+      "isWrappedAsset": false,
+      "rpc_url": "https://api.avax-test.network/ext/C/rpc",
+      "img_url": "https://cryptologos.cc/logos/avalanche-avax-logo.png?v=014"
+    },
+
+    {
+      "src": "Bitcoin",
+      "chainId": "0",
+      "address": "tb1ql0q3te5l8k9pg4d6c8d6skldvh9dl00c8d0rm9",
+      "name": "BTC",
+      "symbol": "BTC",
+      "decimals": 8,
+      "resourceID": "native-btc",
+      "isMintable": false,
+      "isWrappedAsset": false,
+      "rpcUrl": "https://api.testnet.bitcoin.org"
+    }
+  ]
+}

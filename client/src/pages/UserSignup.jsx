@@ -27,7 +27,7 @@ const UserSignup = () => {
       const { companyEmail } = formData;
       const generateOTP = Math.floor(1000 + Math.random() * 9000);
       setReal(generateOTP);
-      const response = await axios.post("http://localhost:5000/sendOTP", {
+      const response = await axios.post("https://critiqall-backend.onrender.com/sendOTP", {
         otp: generateOTP,
         email: companyEmail,
       });
@@ -88,7 +88,7 @@ const UserSignup = () => {
 
       // Example POST request using axios
       const response = await axios.post(
-        "http://localhost:5000/customer/create",
+        "https://critiqall-backend.onrender.com/customer/create",
         dataToSend
       );
       console.log(response.data); // Handle response as needed

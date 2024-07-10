@@ -10,7 +10,7 @@ const Profile = () => {
   const [profit,setprofit]=React.useState(0);
   React.useEffect(() => {
     const getDiam=async()=>{
-      const res=await axios.get("http://localhost:5000/getbalance",{params:{pkey:userData.pkey}})
+      const res=await axios.get("https://critiqall-backend.onrender.com/getbalance",{params:{pkey:userData.pkey}})
       console.log(res);
       setdiam(((Number)(res.data.balance)).toFixed(1));
       var d=await fetchProfit();

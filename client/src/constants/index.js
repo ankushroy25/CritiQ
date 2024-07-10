@@ -17,11 +17,11 @@ export const customerNavlinks = [
   //   imgUrl: createProduct,
   //   link: "/company/create-product",
   // },
-  // {
-  //   name: "payment",
-  //   imgUrl: payment,
-  //   link: "/company/marketplace",
-  // },
+  {
+    name: "exchange",
+    imgUrl: payment,
+    link: "/exchange",
+  },
   {
     name: "Leaderboard",
     imgUrl: withdraw,
@@ -51,10 +51,9 @@ export const companyNavlinks = [
     link: "/company/marketplace",
   },
   {
-    name: "withdraw",
+    name: "exchange",
     imgUrl: withdraw,
-    link: "/",
-    disabled: true,
+    link: "/company/exchange",
   },
   {
     name: "profile",

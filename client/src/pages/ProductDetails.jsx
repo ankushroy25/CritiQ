@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Countbox, CustomButton, Loader } from "../components";
 import { thirdweb } from "../assets";
 import Web3 from "web3";
@@ -26,7 +26,7 @@ const ProductDetails = () => {
 
   const fetchReviewsAndQuestions = useCallback(async () => {
     const questionsResponse = await axios.get(
-      `http://localhost:5000/api/form/question/${state.id}`
+      `https://critiqall-backend.onrender.com/api/form/question/${state.id}`
     );
     console.log(questionsResponse);
     setQuestions(questionsResponse.data.questions);
@@ -81,7 +81,7 @@ const ProductDetails = () => {
 
         console.log(JSON.stringify(newReview));
         const rev = JSON.stringify(newReview);
-        const res = await axios.post("http://localhost:5000/sendmoney", {
+        const res = await axios.post("https://critiqall-backend.onrender.com/sendmoney", {
           key: userData.pkey,
         });
         console.log(res.data);
@@ -194,7 +194,10 @@ const ProductDetails = () => {
         </div>
 
         <div className="flex md:w-1/2 flex-wrap justify-between gap-[20px]">
-          <Countbox title="Price" value={state.amt} />
+          <Countbox
+            title="Price"
+            value={(Number(state.amt) / Math.pow(10, 18)).toFixed(2) + " AVAX"}
+          />
           <Countbox title="Reviews" value={state.reviewCount} />
           <Countbox title="Min Review" value={state.min_review_count} />
           <div>

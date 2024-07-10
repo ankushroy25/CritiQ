@@ -12,7 +12,6 @@ const CompanyHomepage = () => {
     const getProducts = async () => {
       setLoading(true);
       const data = await fetchProductsByOwner();
-      console.log(data);
       if (data.length > 0) setProducts(data);
       setLoading(false);
     };

@@ -1,10 +1,8 @@
 import { useState } from "react";
 import readXlsxFile from "read-excel-file";
-import { create } from "@web3-storage/w3up-client";
+// import { create } from "@web3-storage/w3up-client";
 import axios from "axios";
-// import { checkIfImage } from "../utils";
 import Web3 from "web3";
-// import WrongNetwork from "./WrongNetwork";
 import FormField from "./FormField";
 import CustomButton from "./CustomButton";
 import { FiDelete } from "react-icons/fi";
@@ -20,7 +18,6 @@ const FormComponent = () => {
   const [file, setFile] = useState(null);
   const [isOrderIdTracking, setIsOrderIdTracking] = useState(false);
   const [reviewDate, setReviewDate] = useState("");
-  const [imageUrl, setImageUrl] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [aiGenerating, setAiGenerating] = useState(false);
   const [excelFile, setExcelFile] = useState(null);
@@ -94,12 +91,12 @@ const FormComponent = () => {
     setExcelData(data);
   };
 
-  const uploadToWeb3Storage = async (file) => {
-    const token = "YOUR_W3UP_CLIENT_API_TOKEN"; // Replace with your w3up-client API token
-    const client = await create({ token });
-    const cid = await client.put(file);
-    return `https://${cid}.ipfs.dweb.link/${file.name}`;
-  };
+  // const uploadToWeb3Storage = async (file) => {
+  //   const token = "YOUR_W3UP_CLIENT_API_TOKEN"; // Replace with your w3up-client API token
+  //   const client = await create({ token });
+  //   const cid = await client.put(file);
+  //   return `https://${cid}.ipfs.dweb.link/${file.name}`;
+  // };
 
   const handleAiSubmit = async (e) => {
     e.preventDefault();
@@ -171,7 +168,11 @@ const FormComponent = () => {
         line.startsWith("a.") ||
         line.startsWith("b.") ||
         line.startsWith("c.") ||
-        line.startsWith("d.")
+        line.startsWith("d.") ||
+        line.startsWith("a)") ||
+        line.startsWith("b)") ||
+        line.startsWith("c)") ||
+        line.startsWith("d)")
       ) {
         if (currentQuestion && currentQuestion.type === "mcq") {
           currentQuestion.options.push(line.replace(/^[a-d]\.\s*/, ""));
@@ -195,7 +196,8 @@ const FormComponent = () => {
       "upload_preset",
       import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET
     );
-    var imgg = "";
+    console.log(import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET);
+    var imageUrl = "";
     try {
       const response = await axios.post(
         `https://api.cloudinary.com/v1_1/${
@@ -204,21 +206,20 @@ const FormComponent = () => {
         formData
       );
 
-      setImageUrl(response.data.secure_url);
-      imgg = response.data.url;
-      console.log("Image URL:", response.data.secure_url);
+      imageUrl = response.data.secure_url;
     } catch (error) {
       console.error("Error uploading image:", error);
     }
     var allData = {
       productName: productName,
       productDescription: productDescription,
-      productImageUrl: imgg,
+      productImageUrl: imageUrl,
       isOrderIdTracking: isOrderIdTracking,
       reviewDate: "",
       excelFile: "",
       questions: questions,
     };
+    console.log("aa", allData);
     if (isOrderIdTracking) {
       allData.reviewDate = reviewDate;
       allData.excelFile = excelFile;
@@ -232,17 +233,19 @@ const FormComponent = () => {
       console.log(allData);
       const response = await axios({
         method: "post",
-        url: "http://localhost:5000/api/form/question",
+        url: "https://critiqall-backend.onrender.com/api/form/question",
         data: allData,
       });
       console.log(response);
       const prodid = response.data.data._id;
-      await BcreateProduct(prodid, userData, imgg);
+      // imgg =
+      //   "https://www.jiomart.com/images/product/original/493664931/samsung-galaxy-a23-5g-128-gb-8-gb-ram-silver-mobile-phone-digital-o493664931-p597885912-0-202301260956.jpeg?im=Resize=(420,420)";
+      await BcreateProduct(prodid, userData, imageUrl);
       setIsLoading(false);
 
       // await BcreateProduct(response.data._id);
       if (response.status === 201) {
-        alert("Form submitted successfully!");
+        toast.success("Form submitted successfully!");
         window.location.reload();
       } else {
         toast.error("Error submitting form");
@@ -252,7 +255,7 @@ const FormComponent = () => {
     }
   };
 
-  const BcreateProduct = async (prodID, userdata, imgg) => {
+  const BcreateProduct = async (prodID, userdata, imgURL) => {
     const { contract } = state;
     const accountss = await ethereum.request({
       method: "eth_requestAccounts",
@@ -262,7 +265,7 @@ const FormComponent = () => {
       const res = await contract.methods
         .NewProduct(
           prodID,
-          imgg,
+          imgURL,
           productName,
           isOrderIdTracking,
           exceldata,

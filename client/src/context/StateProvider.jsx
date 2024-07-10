@@ -93,7 +93,7 @@ export const StateProvider = ({ children }) => {
     if (walletConnected) {
       try {
         const response = await axios.post(
-          "http://localhost:5000/api/users/login",
+          "https://critiqall-backend.onrender.com/api/users/login",
           {
             walletAddress,
           }
@@ -114,7 +114,7 @@ export const StateProvider = ({ children }) => {
     if (walletConnected) {
       try {
         const response = await axios.post(
-          "http://localhost:5000/customer/login",
+          "https://critiqall-backend.onrender.com/customer/login",
           {
             walletAddress,
           }
@@ -185,8 +185,8 @@ export const StateProvider = ({ children }) => {
   const createSupervisor = async (number) => {
     // const requestParameters = {
     //   supervisorRequest: {
-    //     name: "Ankush Roy",
-    //     phone: "+919477774657",
+    //     name: "ABC XYZ",
+    //     phone: "+919999999999",
     //     priority: 1,
     //     organization: 108,
     //   },
@@ -197,7 +197,7 @@ export const StateProvider = ({ children }) => {
     // );
     try {
       const res1 = await axios.get(
-        `http://localhost:5000/getphone?phone=${number}`
+        `https://critiqall-backend.onrender.com/getphone?phone=${number}`
       );
       console.log(res1.data);
       if (res1.data.status === 0) {
@@ -228,7 +228,7 @@ export const StateProvider = ({ children }) => {
         );
         const subscriberId = res4.data.id;
         setSubId(subscriberId);
-        const sendData = await axios.post("http://localhost:5000/createphone", {
+        const sendData = await axios.post("https://critiqall-backend.onrender.com/createphone", {
           sid: subscriberId,
           id: supervisorId,
           phone: number.toString(),

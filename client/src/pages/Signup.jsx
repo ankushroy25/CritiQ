@@ -79,7 +79,7 @@ const Signup = () => {
 
       // Example POST request using axios
       const response = await axios.post(
-        "http://localhost:5000/api/users/signup",
+        "https://critiqall-backend.onrender.com/api/users/signup",
         dataToSend
       );
       console.log(response); // Handle response as needed
@@ -179,7 +179,7 @@ const Signup = () => {
           <div className="form-group">
             <label htmlFor="walletAddress" className="flex items-center gap-2">
               <p>Already have an account? </p>
-              <Link to="/companylogin">
+              <Link to="/company/login">
                 <p className="underline underline-offset-2 text-green-600">
                   Click here
                 </p>

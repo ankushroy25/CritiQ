@@ -1,0 +1,8 @@
+@media(max-width:750px)
+{.flexcolll{
+    flex-wrap:wrap;
+}
+.heightdex{
+    height:auto !important;
+}
+}
